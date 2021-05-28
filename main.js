@@ -28,8 +28,16 @@ function removeDuplicates(arr) {
 
     return arrNoDup
 }
+
+function sortAndRemoveDuplicates(arr) {
+    const arrNoDup = removeDuplicates(arr)
+
+    bubbleSort(arrNoDup)
+
+    return arrNoDup
+}
 const arr = [2, -4, 19, 10, 5, 7, 2, -4]
 
-const arrNoDup = removeDuplicates(arr)
+const arrNoDupSorted = sortAndRemoveDuplicates(arr)
 
-console.log(arrNoDup)
+console.log(arrNoDupSorted)
