@@ -16,9 +16,20 @@ function bubbleSort(arr) {
     } while (swapped)
 }
 
-const arr = [2, -4, 19, 10, 5, 7]
 
+function removeDuplicates(arr) {
+    let arrNoDup = []
 
-bubbleSort(arr)
+    arr.forEach(element => {
+        if (!arrNoDup.includes(element)) {
+            arrNoDup.push(element)
+        }
+    })
 
-console.log(arr)
+    return arrNoDup
+}
+const arr = [2, -4, 19, 10, 5, 7, 2, -4]
+
+const arrNoDup = removeDuplicates(arr)
+
+console.log(arrNoDup)
