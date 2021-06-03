@@ -2,5 +2,5 @@ Lenguaje Javascript
 
 Ordenar un arreglo y remover duplicados
 
-1- Bubble sort (ordenar arreglo)
-2- Remover duplicados(forma 3 link https://www.javascripttutorial.net/array/javascript-remove-duplicates-from-array/)
+1- Remover duplicados (metodo 2 link https://www.javascripttutorial.net/array/javascript-remove-duplicates-from-array/)
+2- Ordenar arreglo (insertion sort)
