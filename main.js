@@ -23,10 +23,17 @@ function insertionSort(arr) {
 
 }
 
+function removeDuplicatesAndSort(arr) {
+    let arrNoDup = removeDuplicates(arr)
+
+    insertionSort(arrNoDup)
+
+    return arrNoDup
+}
+
 const arr = [5, 5, 5, 3, 2, 2, 3, 1, 1, 1]
 
-const arrNoDup = removeDuplicates(arr)
+let arrOrg = removeDuplicatesAndSort(arr)
 
-insertionSort(arrNoDup)
 
-console.log(arrNoDup)
+console.log(arrOrg)
