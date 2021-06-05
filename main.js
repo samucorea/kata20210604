@@ -53,10 +53,16 @@ function merge(a, b) {
     return mergedArray
 }
 
+function removeDuplicatesAndSort(arr) {
+    const arrNoDup = removeDuplicates(arr)
+
+    const arrNoDupSorted = mergeSort(arrNoDup)
+
+    return arrNoDupSorted
+}
+
 let arr = [3, 3, 3, 3, 1, 1, 1, 4, 4, 4, 8, 8]
 
-let arrNoDup = removeDuplicates(arr)
+const arrNoDupSorted = removeDuplicatesAndSort(arr)
 
-let arrSorted = mergeSort(arrNoDup)
-
-console.log(arrSorted)
+console.log(arrNoDupSorted)
